@@ -29,7 +29,7 @@ void stampaLista2(struct El* l){
     if(l!=NULL){
         printf("%d \n",l->valore);
         l=l->next;
-        stampaLista(l);
+        stampaLista2(l);
     }
 }
 
