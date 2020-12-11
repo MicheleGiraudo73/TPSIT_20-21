@@ -28,9 +28,7 @@ int main()
             }else{  
                 // se la lista non punta a NULL ovvero punta a qualcosa alloco a next per un nuovo valore e punto alla cella dopo
                 l->next = (struct El *)malloc(sizeof(struct El));
-
                 l = l->next;
-                push(lista,n);
             }
             l->valore = n;  //assegno al nuovo l il valore inserito da tastiera
             l->next = NULL; //porto il puntatore di l a NULL
