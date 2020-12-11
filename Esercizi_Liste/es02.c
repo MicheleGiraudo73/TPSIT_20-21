@@ -47,11 +47,7 @@ int main()
         {
             if (lista == NULL) 
             {
-                
-
-                lista = (struct El *)malloc(sizeof(struct El));
-
-                
+                lista = (struct El *)malloc(sizeof(struct El));   
             }else{  
                 
                 push(lista,n);
@@ -59,8 +55,6 @@ int main()
             
         }
     } while (n >= 0);
-
-   
     printf("numeri inseriti: ");
     stampaLista2(lista);
     printf("\n");
