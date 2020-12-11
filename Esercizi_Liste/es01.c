@@ -24,7 +24,7 @@ int main()
 
                 lista = (struct El *)malloc(sizeof(struct El));
 
-                //l = lista;
+                l = lista;
             }else{  
                 // se la lista non punta a NULL ovvero punta a qualcosa alloco a next per un nuovo valore e punto alla cella dopo
                 l->next = (struct El *)malloc(sizeof(struct El));
