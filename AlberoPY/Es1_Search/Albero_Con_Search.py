@@ -30,6 +30,8 @@ class Node:
     def search(self,key):
         if self is None or self.data == key:
             return self.data
+        else:
+            return "non esiste questa chiave"
         if key < self.data:
             return self.left.search(key)
         if key > self.data:
@@ -48,4 +50,4 @@ root.insert(39)
 root.insert(13)
 root.insert(11)
 
-print(root.search(39))
+print(root.search(19))
